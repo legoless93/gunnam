@@ -29,12 +29,19 @@
     height: 100px;
     background-color: black;
     display: table;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #d1d1d1;
 }
 
 .mainHeader h1 {
     display: table-cell;
     vertical-align: middle;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
     color: white;
+    opacity: 0.8;
+    font: 300%;
+    font-family: sans-serif;
 }
 
 .navbar {
@@ -42,8 +49,22 @@
 }
 
 .banner {
-    width: 99%;
+    width: 99.5%;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 2px;
+}
 
+.doubleCol {
+    margin-top: 10px;
+}
+
+.colLeft, .colRight {
+    height: 500px;
+    background-color: black;
+    margin-right: 10px;
+    margin-left: 5px;
+    border: 1px solid white;
+    outline: 5px solid black;
+    color: whitesmoke;
+    font-family: sans-serif;
 }
