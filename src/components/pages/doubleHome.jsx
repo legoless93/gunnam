@@ -11,14 +11,17 @@ const DoubleHome = createReactClass({
             <div className="doubleCol">
                 <Col md={1}></Col>
 
-                <Col xs={8} md={7} className="colLeft">
-                    <h2><u>About Me</u></h2>
+                <Col sm={12} className="colLeft">
+                    <hr />
+                    <h3><u>About Me</u></h3>
                         Recently graduated from UCL with a degree in MSc Computer Science, I have created a number of different projects with the aim of becoming a Software Developer able to handle all varieties of applications.
+                    <hr />
                 </Col>
 
-                <Col xs={3} md={3} className="colRight">
+ {/*               <Col xs={3} md={3} className="colRight">
 
                 </Col>
+                */}
 
             </div>
 
