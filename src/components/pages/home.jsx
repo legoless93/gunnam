@@ -15,7 +15,7 @@ const Home = createReactClass({
             <div>
 
                 <div className="banner">
-                    <Image className="banner" src={banner}></Image>
+                    <Image className="bannerImg" src={banner}></Image>
                 </div>
                 
                 <div className="section">

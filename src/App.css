@@ -31,7 +31,7 @@
     background: linear-gradient(to bottom right, black, darkblue);
     display: table;
     border-bottom-style: solid;
-    border-bottom-width: 3px;
+    border-bottom-width: 1px;
     border-bottom-color: #d1d1d1;
 }
 
@@ -51,10 +51,20 @@
 
 .navbar {
     margin-bottom: 0;
+    background: linear-gradient(to bottom right, black, darkblue);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #d1d1d1;
 }
 
 .banner {
+    background-color: black;
     width: 99.5%;
+    margin-top: 5px;
+}
+
+.bannerImg {
+    width: 75%;
     margin: auto;
     margin-top: 4px;
 }
