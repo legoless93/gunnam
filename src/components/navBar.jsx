@@ -1,18 +1,20 @@
 import React from 'react';
 import '../App.css';
-import {Navbar, Nav, NavItem, MenuItem, NavDropdown} from 'react-bootstrap';
+import {Navbar, Nav, NavItem, MenuItem, NavDropdown, Image} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
+
+import Name from '../images/name.png';
 
 const NavBar = createReactClass ({
     render() {
         return (
 
             <div>
-                
+
                 <div className="mainHeader">
-                    <h1>Gun-Woo Nam</h1>
+                    <Image className="headerName" src={Name} />
                 </div>
 
                 <Navbar inverse collapseOnSelect className="navbar">
