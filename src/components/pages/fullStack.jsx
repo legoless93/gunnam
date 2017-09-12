@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
+import {Col} from 'react-bootstrap';
 
 const FullStack = createReactClass({
     
@@ -9,7 +10,13 @@ const FullStack = createReactClass({
         return(
         
         <div>
-            Hello World, 2!!!
+            
+            <Col sm={12} md={6}>
+                
+                
+                
+                </Col>
+                
             </div>
             
         )
