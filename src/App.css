@@ -99,8 +99,6 @@
 
 .colLeft, .colRight {
     background-color: black;
-    margin-right: 10px;
-    margin-left: 5px;
     border: 1px solid white;
     outline: 5px solid black;
     color: whitesmoke;
@@ -117,24 +115,27 @@
 .profileBar {
     margin-top: 3px;
     width: 100%;
-    height: 100px;
+    height: 50px;
     /*    background: linear-gradient(to right, #000038, darkblue);*/
-    display: inline-block;
+    display: table;
     border-style: solid;
     border-width: 1px;
     border-color: black;
     background-color: black;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .profRow {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .profButton {
     font-weight: 700;
-    padding: 100ems 200ems;
+    padding: 1em 1em;
     letter-spacing: 1px;
     float: left;
     margin-left: 5px;

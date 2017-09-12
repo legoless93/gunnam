@@ -4,6 +4,12 @@ import PropTypes from 'prop-types';
 import {Col} from 'react-bootstrap';
 
 const DoubleHome = createReactClass({
+    
+    
+    propTypes: {
+        textHeader: PropTypes.object,
+        textBody: PropTypes.string
+    },
 
     render() {
         return (
@@ -13,8 +19,8 @@ const DoubleHome = createReactClass({
 
                 <Col sm={12} className="colLeft">
                     <hr />
-                    <h3><u>About Me</u></h3>
-                        Recently graduated from UCL with a degree in MSc Computer Science, I have created a number of different projects with the aim of becoming a Software Developer able to handle all varieties of applications.
+                    {this.props.textHeader}
+                    {this.props.textBody}
                     <hr />
                 </Col>
 
