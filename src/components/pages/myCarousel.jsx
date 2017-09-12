@@ -3,7 +3,7 @@ import {Carousel} from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
 
-import Name from '../../images/name.png';
+import PlaceHolder from '../../images/placeholder.png';
 import PeachSingle from '../../images/peachSingle.png';
 
 const MyCarousel = createReactClass({
@@ -15,13 +15,13 @@ const MyCarousel = createReactClass({
 
                 <Carousel>
                     <Carousel.Item>
-                        <img className="carImage" alt="900x500" src={Name}/>
+                        <img className="carImage" alt="900x500" src={PlaceHolder}/>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="carImage" src={PeachSingle}/>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="carImage" alt="900x500" src={Name}/>
+                        <img className="carImage" alt="900x500" src={PlaceHolder}/>
                     </Carousel.Item>
                 </Carousel>
 
