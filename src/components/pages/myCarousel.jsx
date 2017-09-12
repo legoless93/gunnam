@@ -16,23 +16,12 @@ const MyCarousel = createReactClass({
                 <Carousel>
                     <Carousel.Item>
                         <img className="carImage" alt="900x500" src={Name}/>
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>MY NAME</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="carImage" src={PeachSingle}/>
-                        <Carousel.Caption className="carText">
-                            <p>Web application used in supporting deployment to HoloLens</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="carImage" alt="900x500" src={Name}/>
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p></p>
-                        </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
 

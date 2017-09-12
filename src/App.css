@@ -63,8 +63,6 @@
     width: 99.5%;
     margin: auto;
     margin-top: 4px;
-    background-color: black;
-    height: 450px;
 }
 
 .doubleCol {
@@ -80,16 +78,6 @@
     outline: 5px solid black;
     color: whitesmoke;
     font-family: sans-serif;
-}
-
-.carText {
-    position: relative;
-    color: white;
-}
-
-.carText p {
-    margin-top: 10px;
-    margin-left: -40%;
 }
 
 .carImage {
