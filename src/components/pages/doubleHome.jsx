@@ -19,7 +19,7 @@ const DoubleHome = createReactClass({
 
                 <Col sm={12} className="colLeft">
                     <hr />
-                    {this.props.textHeader}
+                   {/* {this.props.textHeader}  */}
                     {this.props.textBody}
                     <hr />
                 </Col>

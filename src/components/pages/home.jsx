@@ -13,7 +13,9 @@ const Home = createReactClass({
 
     getInitialState: function() {
         return {about: false, 
-                languages: false};
+                languages: false,
+                previousExperience: false
+               };
     }, 
     toggleAbout: function() {
         this.setState({about: !this.state.about, 
@@ -23,6 +25,11 @@ const Home = createReactClass({
         this.setState({about: false, 
                        languages: !this.state.languages});
     },
+    togglePreviousExperience: function() {
+        this.setState({about: false, 
+                       languages: false,
+                      previousExperience: !this.state.previousExperience});
+    },
 
     render() {
 
@@ -31,7 +38,7 @@ const Home = createReactClass({
             <div>
 
                 <div className="banner">
-                        <Image className="bannerImg" src={banner}></Image>
+                    <Image className="bannerImg" src={banner}></Image>
                 </div>
 
                 <div className="section">
@@ -40,8 +47,10 @@ const Home = createReactClass({
 
                 <div>
                     <ProfileBar toggleAbout={this.toggleAbout} toggleLanguages={this.toggleLanguages} 
+                        togglePreviousExperience={this.togglePreviousExperience}
                         openAbout={this.state.about} 
-                        openLanguages={this.state.languages}/>
+                        openLanguages={this.state.languages} 
+                        openPreviousExperience={this.state.previousExperience}/>
                 </div>
 
             </div>
