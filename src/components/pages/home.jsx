@@ -12,7 +12,7 @@ import ProfileBar from "./profileBar.jsx";
 const Home = createReactClass({
 
     getInitialState: function() {
-        return {about: true, 
+        return {about: false, 
                 languages: false};
     }, 
     toggleAbout: function() {
