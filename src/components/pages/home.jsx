@@ -17,18 +17,18 @@ const Home = createReactClass({
     }, 
     toggleAbout: function() {
         this.setState({about: !this.state.about, 
-                      languages: false});
+                       languages: false});
     },
     toggleLanguages: function() {
         this.setState({about: false, 
-                      languages: !this.state.languages});
+                       languages: !this.state.languages});
     },
 
     render() {
-        
+
         const aboutHeader = <h3><u>About Me</u></h3>;
         const aboutBody = "Recently graduated from UCL with a degree in MSc Computer Science, I have created a number of different projects with the aim of becoming a Software Developer able to handle all varieties of applications.";
-        
+
         const languagesHeader = <h3><u>Languages</u></h3>;
         const languagesBody = "Every language";
 
@@ -37,7 +37,7 @@ const Home = createReactClass({
             <div>
 
                 <div className="banner">
-                    <Image className="bannerImg" src={banner}></Image>
+                        <Image className="bannerImg" src={banner}></Image>
                 </div>
 
                 <div className="section">

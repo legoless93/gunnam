@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import PropTypes from 'prop-types';
 import createReactClass from 'create-react-class';
 
-import Name from '../images/name.png';
+import Name from '../images/terminalTop.png';
 
 const NavBar = createReactClass ({
     render() {
@@ -20,7 +20,7 @@ const NavBar = createReactClass ({
                 <Navbar inverse collapseOnSelect className="navbar">
                     <Navbar.Header>
                         <Navbar.Brand>
-                            <a href="/">GunNam.io</a>
+                            <a href="/">Gun-Woo's-Website:~ Gun-Woo$</a>
                         </Navbar.Brand>
                         <Navbar.Toggle />
                     </Navbar.Header>
