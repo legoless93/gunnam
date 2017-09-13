@@ -1,38 +1,62 @@
 import React from 'react';
-import {Button, Col} from 'react-bootstrap';
+import {Button, Col, Collapse} from 'react-bootstrap';
 import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
+import DoubleHome from "./doubleHome.jsx";
 
 const ProfileBar = createReactClass({
 
     propTypes: {
         toggleAbout: PropTypes.func,
-        toggleLanguages: PropTypes.func
+        toggleLanguages: PropTypes.func,
+        openAbout: PropTypes.obj,
+        openLanguages: PropTypes.obj        
     },
 
     render() {
+
+        const aboutHeader = <h3><u>About Me</u></h3>;
+        const aboutBody = "Recently graduated from UCL with a degree in MSc Computer Science, I have created a number of different projects with the aim of becoming a Software Developer able to handle all varieties of applications.";
+
+        const languagesHeader = <h3><u>Languages</u></h3>;
+        const languagesBody = "Every language";
+
         return(
 
             <div className="profileBar">
-                <div className="profRow">                    
-                    <Col sm={12} md={2}>
+                   
+                    <Col sm={12}>
                         <Button className="profButton"
                             onClick={() => this.props.toggleAbout()}>About Me</Button>
                     </Col>
-                    <Col sm={12} md={2}>
+                    <Col sm={12}>
+                        <Collapse in={this.props.openAbout}>
+                            <div>
+                                <DoubleHome textHeader={aboutHeader} textBody={aboutBody}/>
+                            </div>
+                        </Collapse>
+                    </Col>
+
+                    <Col sm={12}>
                         <Button className="profButton" 
                             onClick={() => this.props.toggleLanguages()}>Languages</Button>
                     </Col>
-                    <Col sm={12} md={4}>
+                    <Col sm={12}>
+                        <Collapse in={this.props.openLanguages}>
+                            <div>
+                                <DoubleHome textHeader={languagesHeader} textBody={languagesBody}/>
+                            </div>
+                        </Collapse>
+                    </Col>
+
+
+                    <Col sm={12}>
                         <Button className="profButton">Previous Experience</Button>
                     </Col>
-                    <Col sm={12} md={2}>
+                    <Col sm={12}>
                         <Button className="profButton">Contact</Button>
                     </Col>
-                    <Col sm={12} md={2}>
-                        <Button className="profButton">Misc.</Button>
-                    </Col>
-                </div>
+
 
             </div>
 

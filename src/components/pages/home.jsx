@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, Collapse, Well} from 'react-bootstrap';
+import {Image, Collapse} from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import banner from '../../images/banner.png';
 import createReactClass from 'create-react-class';
@@ -12,7 +12,7 @@ import ProfileBar from "./profileBar.jsx";
 const Home = createReactClass({
 
     getInitialState: function() {
-        return {about: false, 
+        return {about: true, 
                 languages: false};
     }, 
     toggleAbout: function() {
@@ -25,12 +25,6 @@ const Home = createReactClass({
     },
 
     render() {
-
-        const aboutHeader = <h3><u>About Me</u></h3>;
-        const aboutBody = "Recently graduated from UCL with a degree in MSc Computer Science, I have created a number of different projects with the aim of becoming a Software Developer able to handle all varieties of applications.";
-
-        const languagesHeader = <h3><u>Languages</u></h3>;
-        const languagesBody = "Every language";
 
         return (
 
@@ -45,19 +39,10 @@ const Home = createReactClass({
                 </div>
 
                 <div>
-                    <ProfileBar toggleAbout={this.toggleAbout} toggleLanguages={this.toggleLanguages}/>
+                    <ProfileBar toggleAbout={this.toggleAbout} toggleLanguages={this.toggleLanguages} 
+                        openAbout={this.state.about} 
+                        openLanguages={this.state.languages}/>
                 </div>
-
-                <Collapse in={this.state.about}>
-                    <div>
-                        <DoubleHome textHeader={aboutHeader} textBody={aboutBody}/>
-                    </div>
-                </Collapse>
-                <Collapse in={this.state.languages}>
-                    <div>
-                        <DoubleHome textHeader={languagesHeader} textBody={languagesBody}/>
-                    </div>
-                </Collapse>
 
             </div>
         )
