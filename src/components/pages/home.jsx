@@ -19,11 +19,13 @@ const Home = createReactClass({
     }, 
     toggleAbout: function() {
         this.setState({about: !this.state.about, 
-                       languages: false});
+                       languages: false, 
+                      previousExperience: false});
     },
     toggleLanguages: function() {
         this.setState({about: false, 
-                       languages: !this.state.languages});
+                       languages: !this.state.languages, 
+                      previousExperience: false});
     },
     togglePreviousExperience: function() {
         this.setState({about: false, 
