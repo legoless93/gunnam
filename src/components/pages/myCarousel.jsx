@@ -5,6 +5,8 @@ import createReactClass from 'create-react-class';
 
 import PlaceHolder from '../../images/placeholder.png';
 import PeachSingle from '../../images/peachSingle.png';
+import RFHPoster from '../../images/rfhposter.png';
+
 
 const MyCarousel = createReactClass({
 
@@ -15,7 +17,7 @@ const MyCarousel = createReactClass({
 
                 <Carousel>
                     <Carousel.Item>
-                        <img className="carImage" alt="900x500" src={PlaceHolder}/>
+                        <img className="carImage" src={RFHPoster}/>
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="carImage" src={PeachSingle}/>

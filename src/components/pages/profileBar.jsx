@@ -21,7 +21,7 @@ const ProfileBar = createReactClass({
         const aboutBody = "Recently graduated from UCL with a degree in MSc Computer Science, I have created a number of different projects with the aim of becoming a Software Developer able to handle all varieties of applications.";
 
         const languagesHeader = <h3><u>Languages</u></h3>;
-        const languagesBody = <div>Highly proficient in Java<br />Proficient Javascript<br />Experience in fullstack web development (SQL, React.js, Node.js)<br />Limited proficiency in C#<br />Limited proficiency in Python</div>;
+        const languagesBody = <div>Highly proficient in Java<br />Proficient in Javascript<br />Experience in fullstack web development (SQL, React.js, Node.js)<br />Limited proficiency in C#<br />Limited proficiency in Python</div>;
         
         const previousExperienceHeader = <h3><u>Previous Experience</u></h3>;
         const previousExperienceBody = "I have worked on a variety of different projects, both personally and in a team, ranging from simple websites to fullstack web applications to mobile applications. These are all available to see in detail via the links in the navigation bar at the top of the page.";

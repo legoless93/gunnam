@@ -8,6 +8,7 @@ import createReactClass from 'create-react-class';
 import Name from '../images/terminalTop.png';
 
 const NavBar = createReactClass ({
+    
     render() {
         return (
 
@@ -35,13 +36,13 @@ const NavBar = createReactClass ({
                             </LinkContainer>
                         </Nav>
 
-                        <Nav pullRight>
+                  {/*      <Nav pullRight>
                             <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
                                 <MenuItem eventKey={3.1}>Action</MenuItem>
                                 <MenuItem divider />
                                 <MenuItem eventKey={3.3}>Separated link</MenuItem>
                             </NavDropdown>
-                        </Nav>
+                        </Nav>   */}
                     </Navbar.Collapse>
                 </Navbar>
 
